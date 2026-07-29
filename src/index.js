@@ -1,4 +1,2 @@
 import "./style.css";
-import { test } from "./logic.js";
-
-test();
+import { capitalize } from "./logic.js";

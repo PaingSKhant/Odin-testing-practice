@@ -7,7 +7,10 @@ export default [
     files: ["**/*.{js,mjs,cjs}"],
     rules: js.configs.recommended.rules,
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.jest,
+      },
     },
   },
   eslintConfigPrettier,

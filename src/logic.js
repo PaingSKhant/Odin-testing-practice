@@ -1,5 +1,8 @@
-export function test() {
-  let x;
-  x = 10;
-  console.log(x);
+export function capitalize(string) {
+  if (!string) return "";
+  return string[0].toUpperCase() + string.slice(1);
+}
+
+export function reverse(string) {
+  return string;
 }
